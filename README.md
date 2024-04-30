@@ -13,3 +13,10 @@ So why not just use IDA? One of my most familiar tools and it already has all th
 This is not a complete product, since I have 0 knowledge about IDA APIs, and personally I think the documentation and examples of IDA are not perfect enough, which adds a lot of understanding cost, it is currently only a very, very early version, it can't even understand one function, currently all it can do is disassemble a single instruction when you press C, and generate cross-references to the JUMP and JUMP_IF_FALSE (aka JNE) instructions. I also created a segment for Udon's heap and put all the All references to heap are redirected to that place.
 
 I may continue to improve this processor in the future. Also hoping someone can read this and help me finish this processor.
+
+# Install & Usage
+1. Download `udonsharp.py` and put to `<YOUR IDA INSTALL DIR>\procs`
+2. Open IDA
+3. Load UdonSharp bytecode file
+4. Select Process `UdonSharp Byte Code` (search by `udon`)
+5. Keep all default and keep click `OK`
